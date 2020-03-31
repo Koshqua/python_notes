@@ -3,7 +3,7 @@
 # if you open in a-mode and write - it will add content to the end of existing file
 
 file = open("file.txt", "a")
-file.write("Nathan Ten Napel\n")
+file.write("Nathan\n")
 #will append to the end
 
 file.close()
