@@ -47,3 +47,37 @@ arbitraty(1,23,45,6,6,7,7,2)
 #if we have list or tuple, we can create sequence of seperate args 
 
 print(list(range(*[1,10]))) #*[1,10] returns 1,10 
+
+def desribed():
+    '''First line describes function briefly
+    
+    Second line should be blank. Rest describe func in details.
+    '''
+    pass
+
+# it's possible to restrict using keyword only or position only arguments in function call
+# by default, u can use both, position and keyword 
+# by putting "/" in the end of list of args, you will restrict to pass only args by position on call
+# "/" is used to separate pos only arguments from rest of them 
+def key_only (*,arg, arg2=None):
+    pass
+
+key_only("string", 2)
+
+#it comes in python 3.8 
+# def pos_only(arg1, /, arg2):
+#     pass
+
+
+#we can annotate function (it's arguments and output result)
+#it has no influence on the way code is written.
+#it's used only for documenting 
+
+def my_func(one: str, two: str) -> str:
+    return one + two
+
+print(my_func("ti ", "loh"))
+
+
+
+
